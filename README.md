@@ -71,3 +71,7 @@ If you wish to generate a grid more than 30 columns wide, you must add the defin
 
 1. Improve output efficiency, such as grouping/extending of overlapping grid classes.
 2. Add default flags to variables for easier overrides.
+
+## Notes
+
+This framework was inspired by both Bootstrap and the Timber framework. I wanted a flexbox based grid system for my own personal projects, but didn't like the bloat that it feels like it comes with, nor the col-breakpoint-num naming convention. The Timber framework on the other hand contained a more verbose class naming system, however isn't/wasn't flexbox based. Brickworks is an attempt to combine and improve these systems.
