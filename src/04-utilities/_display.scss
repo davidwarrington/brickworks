@@ -1,0 +1,13 @@
+@if $generate-utilities == true {
+    @include display-helper;
+
+    @each $breakpoint in $breakpoint-has-widths {
+        @include media-query($breakpoint) {
+            @include display-helper('#{$breakpoint}--');
+        }
+    }
+
+    .visually-hidden {
+        @include visually-hidden;
+    }
+}

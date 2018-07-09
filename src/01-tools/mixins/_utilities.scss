@@ -1,0 +1,22 @@
+@mixin visually-hidden {
+    // sass-lint:disable no-important
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    position: absolute !important;
+    overflow: hidden;
+    width: 1px;
+}
+
+@mixin display-helper($breakpoint: '') {
+    // sass-lint:disable no-important
+    .#{$breakpoint}hide {
+        display: none !important;
+    }
+    
+    .#{$breakpoint}show {
+        display: block !important;
+    }
+}

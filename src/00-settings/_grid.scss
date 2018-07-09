@@ -1,0 +1,58 @@
+$grids: (1, 2, 3, 4, 5, 6, 8, 10, 12);
+
+$grid-gutter: 30px;
+
+$down: 'down';
+$up:   'up';
+
+$tiny:        'tiny';
+$small:       'small';
+$small-down:  '#{$small}-#{$down}';
+$small-up:    '#{$small}-#{$up}';
+$medium:      'medium';
+$medium-down: '#{$medium}-#{$down}';
+$medium-up:   '#{$medium}-#{$up}';
+$large:       'large';
+$large-down:  '#{$large}-#{$down}';
+$large-up:    '#{$large}-#{$up}';
+$huge:        'huge';
+
+$container-widths: (
+    $small-up:  540px,
+    $medium-up: 720px,
+    $large-up:  960px,
+    $huge:      1140px
+);
+
+$media-width-small:  576px;
+$media-width-medium: 768px;
+$media-width-large:  992px;
+$media-width-huge:   1200px;
+
+$breakpoints: (
+    $tiny        '(max-width: #{$media-width-small - 1})',
+    $small       '(min-width: #{$media-width-small}) and (max-width: #{$media-width-medium - 1})',
+    $small-down  '(max-width: #{$media-width-medium - 1})',
+    $small-up    '(min-width: #{$media-width-small})',
+    $medium      '(min-width: #{$media-width-medium}) and (max-width: #{$media-width-large - 1})',
+    $medium-down '(max-width: #{$media-width-large - 1})',
+    $medium-up   '(min-width: #{$media-width-medium})',
+    $large       '(min-width: #{$media-width-large}) and (max-width: #{$media-width-large - 1})',
+    $large-down  '(max-width: #{$media-width-large - 1})',
+    $large-up    '(min-width: #{$media-width-large})',
+    $huge        '(min-width: #{$media-width-large})'
+);
+
+$breakpoint-has-widths: (
+    $tiny,
+    $small,
+    $small-down,
+    $small-up,
+    $medium,
+    $medium-down,
+    $medium-up,
+    $large,
+    $large-down,
+    $large-up,
+    $huge
+);

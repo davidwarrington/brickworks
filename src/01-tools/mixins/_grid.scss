@@ -1,0 +1,77 @@
+@mixin make-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $grid-gutter / 2;
+    padding-right: $grid-gutter / 2;
+    width: 100%;
+}
+
+@mixin make-grids {
+    %grid-column {
+        min-height: 1px;
+        padding-left: $grid-gutter / 2;
+        padding-right: $grid-gutter / 2;
+        position: relative;
+        width: 100%;
+    }
+
+    @each $grid in $grids {
+        $number: nth($numbers, $grid);
+
+        $integer: nth($number, 1);
+        $figure: nth($number, 2);
+        $fraction: nth($number, 3);
+        $fractions: nth($number, 4);
+
+        @include grid-generator($number) {
+            @extend %grid-column;
+        }
+
+        @include grid-generator($number);
+
+        @each $breakpoint in $breakpoint-has-widths {
+            @include media-query($breakpoint) {
+                @include grid-generator($number, '#{$breakpoint}--');
+            }
+        }
+    }
+}
+
+@mixin grid-generator($number, $breakpoint: '') {
+    $integer: nth($number, 1);
+    $figure: nth($number, 2);
+    $fraction: nth($number, 3);
+    $fractions: nth($number, 4);
+
+    $x: 1;
+    @if ($integer - 1) > 1 {
+        $x: $integer - 1;
+    }
+
+    $content-exists: content-exists();
+
+    @for $i from 1 through $x {
+        $current_number: nth(nth($numbers, $i), 2);
+
+        $width: percentage($i / $integer);
+        @if $i == 1 {
+            .#{$breakpoint}#{$current_number}-#{$fraction} {
+                @if $content-exists {
+                    @content;
+                } @else {
+                    flex: 0 0 $width;
+                    max-width: $width;
+                }
+            }
+        } @else {
+            .#{$breakpoint}#{$current_number}-#{$fractions} {
+                @if $content-exists {
+                    @content;
+                } @else {
+                    flex: 0 0 $width;
+                    max-width: $width;
+                }
+            }
+        }
+    }
+}

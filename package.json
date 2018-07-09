@@ -1,0 +1,40 @@
+{
+  "name": "brickworks",
+  "version": "0.0.1",
+  "description": "A highly configurable, verbose SASS Flexbox based Grid Framework.",
+  "keywords": [
+    "brickworks",
+    "css",
+    "flexbox",
+    "grid",
+    "sass"
+  ],
+  "main": "src/main.scss",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidwarrington/brickworks.git"
+  },
+  "author": "David Warrington <davidmwarrington@gmail.com> (https://davidwarrington.co.uk)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidwarrington/brickworks/issues"
+  },
+  "homepage": "https://github.com/davidwarrington/brickworks#readme",
+  "devDependencies": {
+    "autoprefixer": "^8.6.4",
+    "css-loader": "^0.28.11",
+    "mini-css-extract-plugin": "^0.4.1",
+    "node-sass": "^4.9.0",
+    "normalize.css": "^8.0.0",
+    "postcss-loader": "^2.1.5",
+    "precss": "^3.1.2",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.14.0",
+    "webpack-cli": "^3.0.8"
+  }
+}
