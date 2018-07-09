@@ -38,15 +38,15 @@ This is the main configuration file.
 
 ### `00-settings/_definitions.scss`
 
-This file just contains a list of numbers in the following format:
+This file just contains a list of numbers in the following format: `9 nine ninth ninths`.
 
-`9 nine ninth ninths`. These number definitions are used to generate column names. By default the list contains definitions for numbers 1 through 30.
+These number definitions are used to generate column names. By default the list contains definitions for numbers 1 through 30.
 
 Each definition must follow the following format:
-`8` - A number.
-`eight` - The name of the number.
-`eighth` - The name of the number when used as a denominator/divisor.
-`eighths` - The plural of the previous.
+1. `8` - A number.
+2. `eight` - The name of the number.
+3. `eighth` - The name of the number when used as a denominator/divisor.
+4. `eighths` - The plural of the previous.
 
 If you wish to generate a grid more than 30 columns wide, you must add the definitions yourself.
 
