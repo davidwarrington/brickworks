@@ -66,3 +66,8 @@ If you wish to generate a grid more than 30 columns wide, you must add the defin
 ### Mixins
 
 1. `media-query($breakpoint)` - can be used with the previously defined breakpoints to create media queries in your own SASS.
+
+## To Do
+
+1. Improve output efficiency, such as grouping/extending of overlapping grid classes.
+2. Add default flags to variables for easier overrides.
