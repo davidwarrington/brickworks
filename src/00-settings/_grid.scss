@@ -1,33 +1,33 @@
-$grids: (1, 2, 3, 4, 5, 6, 8, 10, 12);
+$grids: (1, 2, 3, 4, 5, 6, 8, 10, 12) !default;
 
-$grid-gutter: 30px;
+$grid-gutter: 30px !default;
 
-$down: 'down';
-$up:   'up';
+$down: 'down' !default;
+$up:   'up' !default;
 
-$tiny:        'tiny';
-$small:       'small';
-$small-down:  '#{$small}-#{$down}';
-$small-up:    '#{$small}-#{$up}';
-$medium:      'medium';
-$medium-down: '#{$medium}-#{$down}';
-$medium-up:   '#{$medium}-#{$up}';
-$large:       'large';
-$large-down:  '#{$large}-#{$down}';
-$large-up:    '#{$large}-#{$up}';
-$huge:        'huge';
+$tiny:        'tiny' !default;
+$small:       'small' !default;
+$small-down:  '#{$small}-#{$down}' !default;
+$small-up:    '#{$small}-#{$up}' !default;
+$medium:      'medium' !default;
+$medium-down: '#{$medium}-#{$down}' !default;
+$medium-up:   '#{$medium}-#{$up}' !default;
+$large:       'large' !default;
+$large-down:  '#{$large}-#{$down}' !default;
+$large-up:    '#{$large}-#{$up}' !default;
+$huge:        'huge' !default;
 
 $container-widths: (
     $small-up:  540px,
     $medium-up: 720px,
     $large-up:  960px,
     $huge:      1140px
-);
+) !default;
 
-$media-width-small:  576px;
-$media-width-medium: 768px;
-$media-width-large:  992px;
-$media-width-huge:   1200px;
+$media-width-small:  576px !default;
+$media-width-medium: 768px !default;
+$media-width-large:  992px !default;
+$media-width-huge:   1200px !default;
 
 $breakpoints: (
     $tiny        '(max-width: #{$media-width-small - 1})',
@@ -41,7 +41,7 @@ $breakpoints: (
     $large-down  '(max-width: #{$media-width-large - 1})',
     $large-up    '(min-width: #{$media-width-large})',
     $huge        '(min-width: #{$media-width-large})'
-);
+) !default;
 
 $breakpoint-has-widths: (
     $tiny,
@@ -55,4 +55,4 @@ $breakpoint-has-widths: (
     $large-down,
     $large-up,
     $huge
-);
+) !default;
