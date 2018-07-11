@@ -1,4 +1,4 @@
-.wrapper {
+.container {
     @include make-container;
 
     @each $breakpoint in $breakpoint-has-widths {
@@ -10,7 +10,7 @@
     }
 }
 
-.wrapper--flush {
+.container--flush {
     @include make-container;
 }
 

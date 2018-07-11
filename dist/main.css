@@ -306,26 +306,26 @@ template {
 [hidden] {
   display: none; }
 
-.wrapper {
+.container {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
   width: 100%; }
   @media (min-width: 576px) {
-    .wrapper {
+    .container {
       max-width: 540px; } }
   @media (min-width: 768px) {
-    .wrapper {
+    .container {
       max-width: 720px; } }
   @media (min-width: 992px) {
-    .wrapper {
+    .container {
       max-width: 960px; } }
   @media (min-width: 992px) {
-    .wrapper {
+    .container {
       max-width: 1140px; } }
 
-.wrapper--flush {
+.container--flush {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
