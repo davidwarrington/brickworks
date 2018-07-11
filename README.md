@@ -4,6 +4,15 @@
 
 A highly configurable verbose SASS/CSS grid system. Want a grid system with descriptive class names? Want to generate multiple grid systems with ease? Want to see how many lines of CSS you can print for the fun of it? This is the grid system for you!
 
+## Contents
+
+1. [Installation](#installation)
+2. [Configuration](#configuration)
+3. [Using the Framework](#using-the-framework)
+4. [Tools](#tools)
+5. [To Do](#to-do)
+6. [Notes](#notes)
+
 ## Installation
 
 1. Download the repository.
@@ -85,7 +94,7 @@ If you wish to generate a grid more than 30 columns wide, you must add the defin
 ## To Do
 
 1. Improve output efficiency, such as grouping/extending of overlapping grid classes.
-2. Improve documentation
+2. Improve documentation.
 
 ## Notes
 
