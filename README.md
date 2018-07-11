@@ -56,6 +56,21 @@ If you wish to generate a grid more than 30 columns wide, you must add the defin
 
 * `$generate-utilities` - Generates responsive `.show` and `.hide` classes, along with a `.visually-hidden` class.
 
+## Using the Framework
+
+1. 
+    To get started using the framework to lay out your web pages, you need to wrap your content inside a `.container`. By default the `.container` class will centre your content along the x-axis and has a max width of `1400px` at large screen sizes.
+
+    If you need a container that spans the full width of the page, use the `.container--flush` class. This doesn't have a max width at any size.
+
+2.
+    Each grid needs to be wrapped inside a `.grid` class (often called `.row` in other frameworks). This allows the columns to wrap onto new lines if they exceed the maximum width of the grid.
+
+3.
+    Finally, you can start using your responsive classes. To begin with you can start giving your columns classes such as `.three-quarters`, but for responsive control, you can use classes such as `.large--one-half`, `.medium-down--two-thirds` or `.small-up--one-whole`.
+
+* **Note:** If you want to nest grids inside one another, you can do so without using another container class.
+
 ## Tools
 
 ### Functions
