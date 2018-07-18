@@ -28,8 +28,21 @@
         }
 
         @include grid-generator($number);
+    }
 
-        @each $breakpoint in $breakpoint-has-widths {
+    @each $breakpoint in $breakpoint-has-widths {
+        @each $grid in $grids {
+            $number: nth($numbers, $grid);
+
+            $integer: nth($number, 1);
+            $figure: nth($number, 2);
+            $fraction: nth($number, 3);
+            $fractions: nth($number, 4);
+
+            @include grid-generator($number, '#{$breakpoint}--') {
+                @extend %grid-column;
+            }
+
             @include media-query($breakpoint) {
                 @include grid-generator($number, '#{$breakpoint}--');
             }
