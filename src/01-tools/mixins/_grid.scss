@@ -77,7 +77,7 @@
                 }
             }
 
-            .#{$breakpoint}push-#{$current_number}-#{$fraction} {
+            .#{$breakpoint}push--#{$current_number}-#{$fraction} {
                 margin-left: $width;
             }
         } @else {
