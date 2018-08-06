@@ -76,6 +76,10 @@
                     max-width: $width;
                 }
             }
+
+            .#{$breakpoint}push-#{$current_number}-#{$fraction} {
+                margin-left: $width;
+            }
         } @else {
             .#{$breakpoint}#{$current_number}-#{$fractions} {
                 @if $content-exists {
@@ -87,4 +91,8 @@
             }
         }
     }
+}
+
+@mixin make-pushes() {
+    .push { background: tomato; }
 }
